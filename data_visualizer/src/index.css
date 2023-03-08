@@ -10,3 +10,30 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none
+}
+
+::selection {
+    color: white;
+    background: #818AA1;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E0E5EC;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #818AA1;
+    border-radius: 2px;
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -8,11 +8,9 @@ import { theme } from './theme/theme'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <ChakraProvider theme={theme}>
+  <ChakraProvider theme={theme}>
     <App />
-    </ChakraProvider>
-  </React.StrictMode>
+  </ChakraProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

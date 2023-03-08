@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Image, Heading, Avatar, Show, Hide } from '@chakra-ui/react'
-export default function Header_component() {
+export default function Header_component(props) {
   return (
     <Box
       h={'15vh'}
@@ -14,28 +14,29 @@ export default function Header_component() {
       position='relative'
     >
       <Box
-        h={'100%'}
+        h={'80%'}
         display='flex'
         justifyContent='center'
         alignItems='center'
         flexDirection='row'
         gap={5}
       >
-        <Image
-          h={'100%'}
+        <Avatar
+          size='md'
           src='https://www.coffeeclass.io/logos/chakra-ui.png'
-          alt='Your logo' />
+          alt='Your logo'
+        />
         <Hide below='md'>
           <Heading
             as='h1'
             size='lg'
             noOfLines={1}
-          >Wisdom data Visualizer</Heading>
+          > {props.tittle} </Heading>
         </Hide>
         <Avatar
           size='md'
-          name='Víctor martínez'
-          src='https://avatars.githubusercontent.com/u/74670245?v=4'
+          name={props.avatar}
+          src='https://bit.ly/broken-link'
           position='absolute'
           right={0}
           marginRight={'1.5rem'}

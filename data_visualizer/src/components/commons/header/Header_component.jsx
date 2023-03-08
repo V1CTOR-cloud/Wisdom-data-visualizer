@@ -35,8 +35,7 @@ export default function Header_component(props) {
         </Hide>
         <Avatar
           size='md'
-          name={props.avatar}
-          src='https://bit.ly/broken-link'
+          src='https://avatars.githubusercontent.com/u/74670245?v=4'
           position='absolute'
           right={0}
           marginRight={'1.5rem'}

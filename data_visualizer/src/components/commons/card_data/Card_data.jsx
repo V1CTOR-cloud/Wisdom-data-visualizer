@@ -1,11 +1,22 @@
 import React from 'react'
 import moment from 'moment';
-import { Box, Flex, Image, Avatar, Text, useColorModeValue, Tag, TagLabel } from "@chakra-ui/react";
+import {
+    Box,
+    Flex,
+    Image,
+    Avatar,
+    Text,
+    useColorModeValue,
+    Tag,
+    TagLabel,
+    Button
+} from "@chakra-ui/react";
+import { Link, useNavigate } from "react-router-dom";
 export default function Card_data(props) {
     let boxBg = useColorModeValue("white !important", "#111c44 !important");
     let mainText = useColorModeValue("gray.800", "white");
     let secondaryText = useColorModeValue("gray.400", "gray.400");
-
+    const navigate = useNavigate();
     return (
         <Flex
             marginTop={5}
@@ -17,8 +28,10 @@ export default function Card_data(props) {
             alignItems='center'
             direction='column'
             position={'relative'}
-            >
-            <Box 
+            cursor={'pointer'}
+            onClick={() => navigate('/detail')}
+        >
+            <Box
                 display={'flex'}
                 gap={4}
                 position={'absolute'}

@@ -84,7 +84,7 @@ export default function List_component(props) {
                     <Heading size={'md'}>
                         <Highlight
                             query={['Response:']}
-                            styles={{ px: '5', py: '2', rounded: 'full', bg: 'orange.200' }}
+                            styles={{ px: '5', py: '2', rounded: 'full', bg: 'green.200' }}
                         >
                             Response:
                         </Highlight>

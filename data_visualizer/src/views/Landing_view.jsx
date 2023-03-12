@@ -69,7 +69,7 @@ const json24 = require('../data/wisdom/2023-03-06/undefined/24.json');
 const json25 = require('../data/wisdom/2023-03-06/undefined/25.json');
 
 function JsonDecoder(raw_data) {
-    return raw_data.split('\n');
+    return raw_data.trim().split('\n');
 }
 
 export default function Landing_view() {
@@ -238,7 +238,7 @@ export default function Landing_view() {
                     display={list_active % 2 === 0 ? 'block' : 'none'}
                 >
                     <List_component
-                        response={json1.response.text}
+                        response={json1.response.text.trim}
                         questions={json1.propmt.questions}
                         answers={json1.propmt.answers}
                         counter={json1.propmt.counter}

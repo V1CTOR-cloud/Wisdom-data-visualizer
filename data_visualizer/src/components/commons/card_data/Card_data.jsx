@@ -11,7 +11,7 @@ import {
     TagLabel,
     Button
 } from "@chakra-ui/react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, createSearchParams } from "react-router-dom";
 export default function Card_data(props) {
     let boxBg = useColorModeValue("white !important", "#111c44 !important");
     let mainText = useColorModeValue("gray.800", "white");
@@ -29,7 +29,9 @@ export default function Card_data(props) {
             direction='column'
             position={'relative'}
             cursor={'pointer'}
-            onClick={() => navigate('/detail')}
+            onClick={() => navigate({
+                pathname: '/detail',
+            })}
         >
             <Box
                 display={'flex'}

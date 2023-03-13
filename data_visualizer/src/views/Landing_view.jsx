@@ -105,7 +105,7 @@ export default function Landing_view() {
     const { isOpen, onClose, onOpen } = useDisclosure();
     const [sliderValue, setSliderValue] = useState(5)
     const [showTooltip, setShowTooltip] = useState(false)
-    
+
 
     useEffect(() => {
         set_trim_data1(JsonDecoder(json1.propmt.init).filter(n => n))
@@ -543,6 +543,7 @@ export default function Landing_view() {
                 display={list_active % 2 === 1 ? 'grid' : 'none'}
             >
                 <Card_data
+                    title={json1.propmt.prompt}
                     avatar={json1.propmt.user.name}
                     location={json1.propmt.user.location}
                     questions={json1.propmt.questions}
@@ -553,6 +554,7 @@ export default function Landing_view() {
                     start={json1.propmt.start}
                 />
                 <Card_data
+                    title={json2.propmt.prompt}
                     avatar={json2.propmt.user.name}
                     location={json2.propmt.user.location}
                     questions={json2.propmt.questions}
@@ -563,6 +565,7 @@ export default function Landing_view() {
                     start={json2.propmt.start}
                 />
                 <Card_data
+                    title={json3.propmt.prompt}
                     avatar={json3.propmt.user.name}
                     location={json3.propmt.user.location}
                     questions={json3.propmt.questions}
@@ -573,6 +576,7 @@ export default function Landing_view() {
                     start={json3.propmt.start}
                 />
                 <Card_data
+                    title={json4.propmt.prompt}
                     avatar={json4.propmt.user.name}
                     location={json4.propmt.user.location}
                     questions={json4.propmt.questions}
@@ -583,6 +587,7 @@ export default function Landing_view() {
                     start={json4.propmt.start}
                 />
                 <Card_data
+                    title={json5.propmt.prompt}
                     avatar={json5.propmt.user.name}
                     location={json5.propmt.user.location}
                     questions={json5.propmt.questions}
@@ -593,6 +598,7 @@ export default function Landing_view() {
                     start={json5.propmt.start}
                 />
                 <Card_data
+                    title={json6.propmt.prompt}
                     avatar={json6.propmt.user.name}
                     location={json6.propmt.user.location}
                     questions={json6.propmt.questions}
@@ -602,6 +608,7 @@ export default function Landing_view() {
                     lng={json6.propmt.lng}
                     start={json6.propmt.start}
                 /><Card_data
+                    title={json7.propmt.prompt}
                     avatar={json7.propmt.user.name}
                     location={json7.propmt.user.location}
                     questions={json7.propmt.questions}
@@ -612,6 +619,7 @@ export default function Landing_view() {
                     start={json7.propmt.start}
                 />
                 <Card_data
+                    title={json8.propmt.prompt}
                     avatar={json8.propmt.user.name}
                     location={json8.propmt.user.location}
                     questions={json8.propmt.questions}
@@ -622,6 +630,7 @@ export default function Landing_view() {
                     start={json8.propmt.start}
                 />
                 <Card_data
+                    title={json9.propmt.prompt}
                     avatar={json9.propmt.user.name}
                     location={json9.propmt.user.location}
                     questions={json9.propmt.questions}
@@ -632,6 +641,7 @@ export default function Landing_view() {
                     start={json9.propmt.start}
                 />
                 <Card_data
+                    title={json10.propmt.prompt}
                     avatar={json10.propmt.user.name}
                     location={json10.propmt.user.location}
                     questions={json10.propmt.questions}
@@ -642,6 +652,7 @@ export default function Landing_view() {
                     start={json10.propmt.start}
                 />
                 <Card_data
+                    title={json11.propmt.prompt}
                     avatar={json11.propmt.user.name}
                     location={json11.propmt.user.location}
                     questions={json11.propmt.questions}
@@ -652,6 +663,7 @@ export default function Landing_view() {
                     start={json11.propmt.start}
                 />
                 <Card_data
+                    title={json12.propmt.prompt}
                     avatar={json12.propmt.user.name}
                     location={json12.propmt.user.location}
                     questions={json12.propmt.questions}
@@ -662,6 +674,7 @@ export default function Landing_view() {
                     start={json12.propmt.start}
                 />
                 <Card_data
+                    title={json13.propmt.prompt}
                     avatar={json13.propmt.user.name}
                     location={json13.propmt.user.location}
                     questions={json13.propmt.questions}
@@ -672,6 +685,7 @@ export default function Landing_view() {
                     start={json13.propmt.start}
                 />
                 <Card_data
+                    title={json14.propmt.prompt}
                     avatar={json14.propmt.user.name}
                     location={json14.propmt.user.location}
                     questions={json14.propmt.questions}
@@ -682,6 +696,7 @@ export default function Landing_view() {
                     start={json14.propmt.start}
                 />
                 <Card_data
+                    title={json15.propmt.prompt}
                     avatar={json15.propmt.user.name}
                     location={json15.propmt.user.location}
                     questions={json15.propmt.questions}
@@ -692,6 +707,7 @@ export default function Landing_view() {
                     start={json15.propmt.start}
                 />
                 <Card_data
+                    title={json16.propmt.prompt}
                     avatar={json16.propmt.user.name}
                     location={json16.propmt.user.location}
                     questions={json16.propmt.questions}
@@ -702,6 +718,7 @@ export default function Landing_view() {
                     start={json16.propmt.start}
                 />
                 <Card_data
+                    title={json17.propmt.prompt}
                     avatar={json17.propmt.user.name}
                     location={json17.propmt.user.location}
                     questions={json17.propmt.questions}
@@ -712,6 +729,7 @@ export default function Landing_view() {
                     start={json17.propmt.start}
                 />
                 <Card_data
+                    title={json18.propmt.prompt}
                     avatar={json18.propmt.user.name}
                     location={json18.propmt.user.location}
                     questions={json18.propmt.questions}
@@ -722,6 +740,7 @@ export default function Landing_view() {
                     start={json18.propmt.start}
                 />
                 <Card_data
+                    title={json19.propmt.prompt}
                     avatar={json19.propmt.user.name}
                     location={json19.propmt.user.location}
                     questions={json19.propmt.questions}
@@ -732,6 +751,7 @@ export default function Landing_view() {
                     start={json19.propmt.start}
                 />
                 <Card_data
+                    title={json20.propmt.prompt}
                     avatar={json20.propmt.user.name}
                     location={json20.propmt.user.location}
                     questions={json20.propmt.questions}
@@ -742,6 +762,7 @@ export default function Landing_view() {
                     start={json20.propmt.start}
                 />
                 <Card_data
+                    title={json21.propmt.prompt}
                     avatar={json21.propmt.user.name}
                     location={json21.propmt.user.location}
                     questions={json21.propmt.questions}
@@ -752,6 +773,7 @@ export default function Landing_view() {
                     start={json21.propmt.start}
                 />
                 <Card_data
+                    title={json22.propmt.prompt}
                     avatar={json22.propmt.user.name}
                     location={json22.propmt.user.location}
                     questions={json22.propmt.questions}
@@ -762,6 +784,7 @@ export default function Landing_view() {
                     start={json22.propmt.start}
                 />
                 <Card_data
+                    title={json23.propmt.prompt}
                     avatar={json23.propmt.user.name}
                     location={json23.propmt.user.location}
                     questions={json23.propmt.questions}
@@ -772,6 +795,7 @@ export default function Landing_view() {
                     start={json23.propmt.start}
                 />
                 <Card_data
+                    title={json24.propmt.prompt}
                     avatar={json24.propmt.user.name}
                     location={json24.propmt.user.location}
                     questions={json24.propmt.questions}
@@ -782,6 +806,7 @@ export default function Landing_view() {
                     start={json24.propmt.start}
                 />
                 <Card_data
+                    title={json25.propmt.prompt}
                     avatar={json25.propmt.user.name}
                     location={json25.propmt.user.location}
                     questions={json25.propmt.questions}
